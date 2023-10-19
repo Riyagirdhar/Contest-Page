@@ -1,0 +1,83 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
+.headContainer {
+  margin-top: 13px;
+  width: 100vw;
+}
+
+.head {
+  margin: auto;
+  text-align: center;
+  width: 80vw;
+  font-size: 2rem;
+}
+
+#element {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.myContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+#cardContainer {
+  width: 93vw;
+}
+
+.card {
+  width: 100%;
+}
+
+
+@media screen and (min-width: 500px) {
+  #cardContainer {
+    width: 63vw;
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+  .headContainer {
+    margin-top: 13px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .head {
+    margin: 0;
+    width: 221px;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .myContainer {
+    width: 93vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #cardContainer {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    width: 23rem;
+  }
+}
