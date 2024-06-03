@@ -57,37 +57,37 @@ p.then((response) => {
 
 // Search
 
-// let searchButton = document.getElementById('search');
-// searchButton.onclick = () => {
-//   search()
-// }
+let searchButton = document.getElementById('search');
+searchButton.onclick = () => {
+  search()
+}
 
-// const card = document.getElementById('cardContainer')
+const card = document.getElementById('cardContainer')
 
 
-// function search() {
-//   let input = document.getElementById('searchbox').value;
-//   console.log(input)
-//   if (input !== "") {
-//     let regExp = new RegExp(input, "gi");
-//     card.innerHTML = (card.textContent).replace(regExp, "<mark>$&</mark>");
-//   }
-// }
+function search() {
+  let input = document.getElementById('searchbox').value;
+  console.log(input)
+  if (input !== "") {
+    let regExp = new RegExp(input, "gi");
+    card.innerHTML = (card.textContent).replace(regExp, "<mark>$&</mark>");
+  }
+}
 
-// let searchbox = document.getElementById('searchbox')
-// let searchBtn = document.getElementById('search')
-// searchBtn.addEventListener('click', () => {
-//     let inputVal = searchbox.value.toLowerCase()
-//     // console.log("fired!", inputVal)
-//     let cards = document.getElementsByClassName('card')
-//     
-//     Array.from(cards).forEach((element)=>{
-//         let titleTxt = element.getElementsByClassName('card-title')[0].innerText.toLowerCase()
-//         if(titleTxt.includes(inputVal)){
-//             element.style.display = 'flex'
-//         }else{
-//             element.style.display = 'none'
-//         }
-        // console.log(element)
-//     })
-// })
+let searchbox = document.getElementById('searchbox')
+let searchBtn = document.getElementById('search')
+searchBtn.addEventListener('click', () => {
+    let inputVal = searchbox.value.toLowerCase()
+    // console.log("fired!", inputVal)
+    let cards = document.getElementsByClassName('card')
+    
+    Array.from(cards).forEach((element)=>{
+        let titleTxt = element.getElementsByClassName('card-title')[0].innerText.toLowerCase()
+        if(titleTxt.includes(inputVal)){
+            element.style.display = 'flex'
+        }else{
+            element.style.display = 'none'
+        }
+        console.log(element)
+    })
+})
